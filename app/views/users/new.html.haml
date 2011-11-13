@@ -1,0 +1,15 @@
+﻿= form_for @user do |f|
+  .clearfix
+    = f.label :name, "Imię:"
+    .input= f.text_field :name, :class => "xlarge"
+  .clearfix
+    = f.label :surname, "Nazwisko:"
+    .input= f.text_field :surname
+  .clearfix
+    = f.label :age, "Wiek:"
+    .input= f.text_field :age, :class => "xlarge"
+  .clearfix.center
+    = f.submit "Zapisz", :class => "btn primary"
+
+%p
+= link_to "Wróć do użytkowników", users_path

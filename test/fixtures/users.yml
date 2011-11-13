@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  surname: MyString
+  age: 1
+
+two:
+  name: MyString
+  surname: MyString
+  age: 1

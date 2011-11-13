@@ -1,0 +1,20 @@
+﻿%h1 Uzytkownicy:
+= search_form_for @q do |f|
+ = f.label :name, "Imie:"
+ = f.text_field :name_cont
+ = f.label :surname, "nazwisko:"
+ = f.text_field :surname_cont
+ = f.label :age, "Wiek:"
+ = f.text_field :age_cont
+ = f.submit
+- for user in @users
+ %p.meta
+ #{user.name}
+ #{user.surname}
+ #{user.age}
+ = link_to "Pokaz uzytkownika", user_path(user)
+%br
+%br
+%br
+= paginate @users
+= link_to "Dodaj uzytkownika", new_user_path

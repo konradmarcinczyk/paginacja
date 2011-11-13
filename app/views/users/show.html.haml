@@ -1,0 +1,9 @@
+.post
+  %h2.title
+    = link_to @user.name, user_path(@user)
+    = @user.surname
+    = @user.age
+%br
+= link_to "Dodaj nowego uzytkownika", new_user_path
+%p
+= link_to "Wroc do uzytkownikow", users_path
