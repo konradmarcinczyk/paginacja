@@ -10,7 +10,9 @@ gem 'haml'
 gem 'kaminari' #paginacja
 gem 'ransack'  #wyszukiwanie
 gem 'pg'
+gem 'closure-compiler'
 
+# gem 'therubyracer'
 
 # Gems used only for assets and not required
 # in production environments by default.
